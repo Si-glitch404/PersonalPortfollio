@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+<style>
+    body{
+        background-color: rgb(0,0,33);
+    }
+    .skills{
+        height: 300px;
+        width: 200px;
+        margin-left: 480px;
+        margin-top: 150px;
+        display: flex; /* Added display flex */
+        flex-direction: column; /* Changed to column for stacking */
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        border-radius: 20%;
+        background-color: rgb(18, 18, 62);
+        color: white;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem rgb(170,107,228), inset 0 0 1rem rgb(170,107,228), 0 0 2rem rgb(170,107,228), inset 0 0 2rem rgb(170,107,228);
+        border: 0.1rem solid #fff;
+    }
+    
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+        .skills {
+            width: 90%;
+            height: auto;
+            margin: 50px auto;
+            padding: 30px;
+        }
+    }
+</style>
+<body>
+    <div class="skills">
+        <div class="col" data-aos="fade-right">
+            <dl>
+                <dt>HTML :<label for="">75%</label></dt>
+                <dd><input type="range" value="75" disabled ></dd>
+                <dt>CSS :<label for="">40%</label></dt>
+                <dd><input type="range" value="40" disabled></dd>
+                <dt>JAVA :<label for="">70%</label></dt>
+                <dd><input type="range" value="70" disabled></dd>
+            </dl>
+        </div>
+        <div class="col" data-aos="fade-left">
+            <dl>
+                <dt>CPP :<label for="">75%</label></dt>
+                <dd><input type="range" value="75"  disabled></dd>
+                <dt>C :<label for="">40%</label></dt>
+                <dd><input type="range" value="40" disabled></dd>
+                <dt>Python :<label for="">30%</label></dt>
+                <dd><input type="range" value="30" disabled></dd>
+            </dl>
+        </div>
+    </div>
+
+</body>
+</html>

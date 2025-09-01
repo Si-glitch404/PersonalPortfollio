@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0,0,33);
+    color: white ;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height:80px;
+    background-color: rgb(18,18,62) ;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+nav ul li:hover{
+  text-decoration: underline;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white
+}
+nav ul li a:hover{
+    color: rgb(153,153,226);
+    font-size: 1.03rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 110px 0 ;
+    min-height: 50vh;
+}
+.purple{
+    color: rgb(170,107,228);
+}
+#elememt{
+    color: rgb(170,107,228);
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 2.4rem;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.rightSection img {
+    height: 300px;
+    width: 400px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem rgb(170,107,228), inset 0 0 2rem rgb(170,107,228), 0 0 4rem rgb(170,107,228), inset 0 0 4rem rgb(170,107,228);
+    border: 0.1rem solid #fff;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.btn1{
+  background-color: rgb(170,107,228);
+  margin-left: 110px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  border-radius: 40px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  background-repeat: no-repeat;
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem rgb(170,107,228), inset 0 0 1rem rgb(170,107,228), 0 0 2rem rgb(170,107,228), inset 0 0 2rem rgb(170,107,228);
+    border: 0.1rem solid #fff;
+}
+.btn2{
+  background-color: rgb(170,107,228);
+  margin-left: 20px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem rgb(170,107,228), inset 0 0 1rem rgb(170,107,228), 0 0 2rem rgb(170,107,228), inset 0 0 2rem rgb(170,107,228);
+  border: 0.1rem solid #fff;
+}
+.btn1:hover{
+  background-color: rgb(18, 18, 62);
+}
+.btn2:hover{
+  background-color: rgb(18, 18, 62);
+}
+/* Footer */
+#footer {
+    background: rgb(18, 18, 62);
+    margin-top: 50px;
+  }
+  
+  #footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    min-height: 130px;
+    text-align: center;
+  }
+  
+  #footer a {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  
+  #footer a:hover {
+    opacity: 0.6;
+  }
+  
+  #footer .social {
+    margin: 0.9rem 0;
+  }
+  
+  #footer .social img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #footer .social a {
+    margin: 0 0.5rem;
+  }
+  
+  #footer p {
+    font-size: 0.8rem;
+  }
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Main Navigation */
+    nav {
+        flex-direction: row;
+        height: 60px;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(18, 18, 62);
+        padding: 10px 0;
+        z-index: 100;
+        text-align: center;
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .navbar-list li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .left {
+        font-size: 1.2rem;
+    }
+
+    /* First Section (Home Page) */
+    .firstSection {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 50px;
+        min-height: auto;
+    }
+
+    .firstSection > div {
+        width: 90%;
+    }
+    
+    .leftSection {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rightSection img {
+        height: 250px;
+        width: 250px;
+        margin-top: 20px;
+    }
+    
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .btn1,
+    .btn2 {
+        margin: 10px 10px;
+        width: 120px;
+        margin-left: 0;
+    }
+
+    /* Footer */
+    #footer {
+        margin-top: 20px;
+    }
+    #footer .container {
+        padding: 10px;
+    }
+
+    #footer .social a {
+        margin: 0 0.3rem;
+    }
+}
